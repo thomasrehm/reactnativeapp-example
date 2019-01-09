@@ -9,12 +9,16 @@ const styles = StyleSheet.create({
 })
 
 export class Hello extends Component  {
+  toUpperCase(val) {
+    return val.toUpperCase()
+  }
+
   render() {
     const name = this.props.name;
     return (
       <View>
         <Text style={styles.font}>
-          Hello, {name}!
+          Hello, {this.toUpperCase(name)}!
         </Text>
       </View>
     )
