@@ -8,12 +8,13 @@ const styles = StyleSheet.create({
   }
 })
 
-export class Hello extends Component {
+export class Hello extends Component  {
   render() {
+    const name = this.props.name;
     return (
       <View>
         <Text style={styles.font}>
-          Hello, Folks
+          Hello, {name}!
         </Text>
       </View>
     )
